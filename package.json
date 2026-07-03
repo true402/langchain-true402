@@ -1,0 +1,47 @@
+{
+  "name": "@true402.dev/langchain",
+  "version": "0.1.1",
+  "description": "true402 tools for LangChain — pay-per-call on-chain rug/honeypot & address safety for Base AI agents over x402 (USDC, no account, no API key).",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --clean",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "langchain",
+    "langchain-tools",
+    "x402",
+    "base",
+    "rug-check",
+    "honeypot",
+    "token-safety",
+    "crypto",
+    "ai-agent",
+    "agent-tools",
+    "defi",
+    "web3"
+  ],
+  "homepage": "https://true402.dev",
+  "license": "MIT",
+  "dependencies": {
+    "viem": "^2.21.0",
+    "zod": "^3.23.0"
+  },
+  "peerDependencies": {
+    "@langchain/core": ">=0.2.0"
+  },
+  "devDependencies": {
+    "@langchain/core": "^0.3.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
