@@ -26,4 +26,6 @@ The agent can now call, before it trades:
 
 `payerPrivateKey` is a Base wallet holding a little USDC. Without it the stalls still return their HTTP 402 price, so the agent can decide. Override `baseUrl` / `rpcUrl` in the options if self-hosting.
 
+**Checking tokens by hand?** Send any Base token address to [@True402bot](https://t.me/True402bot) on Telegram — same on-chain checks, free, no wallet.
+
 Powered by [true402](https://true402.dev) — the machine-native x402 marketplace on Base. Browse every stall at [/catalog](https://true402.dev/catalog).
