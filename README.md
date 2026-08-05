@@ -22,6 +22,8 @@ The agent can now call, before it trades:
 | `true402_token_report` | Composite **avoid / caution / ok** verdict for a Base ERC-20 (buy/sell honeypot sim + liquidity + ownership + rug activity) | $0.01 |
 | `true402_token_safety` | Structural safety score 0–100 + flags | $0.005 |
 | `true402_address_safety` | Profile + risk for any address before you send/approve/call it (proxy detection) | $0.005 |
+| `true402_tx_preflight` | Check an **unsigned** transaction before signing: does it revert, does it grant an unlimited approval, has the counterparty been draining liquidity. Takes no key and no signature | $0.008 |
+| `true402_liquidity_history` | What already happened to a token's liquidity — every removal with amount/block/tx, plus the tokens drained in the same transaction | $0.005 |
 | `true402_deployer_check` | Deployer reputation — who made the token + their track record | $0.008 |
 
 `payerPrivateKey` is a Base wallet holding a little USDC. Without it the stalls still return their HTTP 402 price, so the agent can decide. Override `baseUrl` / `rpcUrl` in the options if self-hosting.
