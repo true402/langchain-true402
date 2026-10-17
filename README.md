@@ -36,6 +36,12 @@ The agent can now call:
 
 Powered by [true402](https://true402.dev) — the machine-native x402 marketplace on Base. Browse every stall at [/catalog](https://true402.dev/catalog).
 
+## Guides
+
+- [Add a rug check to a LangChain agent](https://true402.dev/guides/rug-check-langchain-agent)
+- [Token price and rug risk in one call](https://true402.dev/guides/token-price-and-rug-check-api)
+- [The x402 protocol, explained](https://true402.dev/guides/what-is-x402)
+
 ## Also available for
 
 MCP (Claude Code / Desktop, Cursor, **Hermes**) · **Hermes Agent** · **OpenClaw** · **ElizaOS** ·
